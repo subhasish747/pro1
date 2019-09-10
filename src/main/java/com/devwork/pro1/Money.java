@@ -12,6 +12,8 @@ public class Money implements java.io.Serializable {
 	private java.lang.String unit;
 	private java.math.BigInteger value;
 
+	private java.lang.String comments;
+
 	public Money() {
 	}
 
@@ -39,11 +41,20 @@ public class Money implements java.io.Serializable {
 		this.value = value;
 	}
 
+	public java.lang.String getComments() {
+		return this.comments;
+	}
+
+	public void setComments(java.lang.String comments) {
+		this.comments = comments;
+	}
+
 	public Money(java.lang.String country, java.lang.String unit,
-			java.math.BigInteger value) {
+			java.math.BigInteger value, java.lang.String comments) {
 		this.country = country;
 		this.unit = unit;
 		this.value = value;
+		this.comments = comments;
 	}
 
 }
