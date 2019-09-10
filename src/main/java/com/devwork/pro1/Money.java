@@ -6,12 +6,44 @@ package com.devwork.pro1;
 
 public class Money implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Money() {
-    }
+	private java.lang.String country;
+	private java.lang.String unit;
+	private java.math.BigInteger value;
 
+	public Money() {
+	}
 
+	public java.lang.String getCountry() {
+		return this.country;
+	}
 
+	public void setCountry(java.lang.String country) {
+		this.country = country;
+	}
+
+	public java.lang.String getUnit() {
+		return this.unit;
+	}
+
+	public void setUnit(java.lang.String unit) {
+		this.unit = unit;
+	}
+
+	public java.math.BigInteger getValue() {
+		return this.value;
+	}
+
+	public void setValue(java.math.BigInteger value) {
+		this.value = value;
+	}
+
+	public Money(java.lang.String country, java.lang.String unit,
+			java.math.BigInteger value) {
+		this.country = country;
+		this.unit = unit;
+		this.value = value;
+	}
 
 }
