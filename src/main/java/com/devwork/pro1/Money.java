@@ -15,6 +15,7 @@ public class Money implements java.io.Serializable {
 	private java.lang.String comments;
 
 	public Money() {
+		System.out.println(""abcd");
 	}
 
 	public java.lang.String getCountry() {
